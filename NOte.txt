@@ -1,0 +1,74 @@
+npx create-react-app react-redux-demo
+
+React Redux Tutorials - 14 - React Redux Setup
+	https://www.youtube.com/watch?v=0bVP5cYhMuU&list=PLC3y8-rFHvwheJHvseC3I0HuYI2f46oAK&index=14
+
+Support - https://www.paypal.me/Codevolution | Facebook - https://www.facebook.com/codevolutionweb |
+Github - https://github.com/gopinav
+
+
+Codevolution [https://www.youtube.com/channel/UC80PWRj_ZU8Zu0HSMNVwKWw]
+
+Reactjs code snippets [https://marketplace.visualstudio.com/items?itemName=xabikos.ReactSnippets]
+
+rsfp - Stateless component
+ Example 
+	import React from 'react';
+	import PropTypes from 'prop-types';
+
+	CakeContainer.propTypes = {
+		
+	};
+
+	function CakeContainer(props) {
+		return (
+			<div>
+				
+			</div>
+		);
+	}
+
+	export default CakeContainer;
+
+rcfc - Create React Compnent
+
+	import React, { Component } from 'react';
+	import PropTypes from 'prop-types';
+
+	class CakeContainer extends Component {
+		constructor(props) {
+			super(props);
+
+		}
+
+		componentWillMount() {}
+
+		componentDidMount() {}
+
+		componentWillReceiveProps(nextProps) {
+		}
+
+		shouldComponentUpdate(nextProps, nextState) {}
+
+		componentWillUpdate(nextProps, nextState) {}
+
+		componentDidUpdate(prevProps, prevState) {}
+
+		componentWillUnmount() {}
+
+		render() {
+			return (<div></div>);
+		}
+	}
+
+	CakeContainer.propTypes = {};
+
+	export default CakeContainer;
+	
+$ npm i redux react-redux
+
+$ npm i redux-logger
+
+$ npm i axios
+
+$npm install redux-thunk [Async Calls]
