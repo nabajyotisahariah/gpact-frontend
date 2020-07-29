@@ -22,6 +22,22 @@ export const libraryFailureAction = (err) => {
     }
 }
 
+export const isPopupOpenAction = (flag) => {
+    return {
+        type : Types.GET_POPUP_OPEN,
+        payload : flag
+    }
+}
+
+
+
+export const booksPopulateAction = (books) => {
+    return {
+        type : Types.GET_BOOKS_POPULATE,
+        payload : books
+    }
+}
+
 
 export const libraryAsyncAction = () => {
     return (dispatch) => {

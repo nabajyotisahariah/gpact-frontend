@@ -10,8 +10,8 @@ class Book extends Component {
 
     render() {
 
-        //console.log(" === ",this.props.booksList)
-        return (<div style={{"background-color": "white", "height": "300px", "width": "300px", "color": "black", "margin-top": "100px", "margin-left": "20px;"}}>
+        console.log(" === ",this.props.booksList)
+        return (<div className="book">
             
             { this.props.booksList.length > 0 ?
                 (<div>
@@ -29,7 +29,7 @@ class Book extends Component {
     }
 }
 const mapStatetoProp = (state) => ({
-    booksList : state.user.booksList
+    booksList : state.library.booksList
   });
   
   const mapDispatchToProps = (dispatch) => ({    

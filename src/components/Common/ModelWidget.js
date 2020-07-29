@@ -5,6 +5,7 @@ class ModalWidget extends React.Component {
 
   render() {
 
+    console.log("ModalWidget this.props.show ",this.props.show)
     // Render nothing if the "show" prop is false
     if(!this.props.show) {
       return null;

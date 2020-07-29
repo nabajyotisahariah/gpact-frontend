@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.book{
+    background-color: white;
+    height: 300px; 
+    width: 300px;
+    color: black;
+    margin-top: 100px;
+    margin-left: 20px;
+}
