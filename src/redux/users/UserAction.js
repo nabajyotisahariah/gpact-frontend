@@ -23,7 +23,8 @@ export const failureRequestAction = (err) => {
 }
 
 
-export const asyncRequestAction = () => {
+//export const asyncRequestAction = () => (dispatch)=> { // Not working
+export const asyncRequestAction = () => {    
     return (dispatch) => {
         dispatch(fetchRequestAction());
         axios.get('https://jsonplaceholder.typicode.com/users', {})
